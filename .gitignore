@@ -1,0 +1,11 @@
+# Data
+logs/
+data/
+
+# Artifacts
+artifacts/
+
+# Packaging
+venv/
+*.egg-info/
+__pycache__/
