@@ -106,3 +106,10 @@ def _predict(request: Request, payload: PredictPayload) -> Dict:
         "data": {"predictions": predictions},
     }
     return response
+
+# uvicorn app.api:app \       
+#     --host 0.0.0.0 \        
+#     --port 8000 \          
+#     --reload \              
+#     --reload-dir tagifai \  
+#     --reload-dir app

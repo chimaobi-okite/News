@@ -7,10 +7,14 @@ BASE_DIR = Path(__file__).parent.parent.absolute()
 CONFIG_DIR = Path(BASE_DIR, 'config')
 DATA_DIR = Path(BASE_DIR, 'data')
 MODEL_REGISTRY = Path(BASE_DIR, 'artifacts')
+STORES_DIR = Path(BASE_DIR, "stores")
 LOGS_DIR = Path(BASE_DIR, 'logs')
+
+BLOB_STORE = Path(STORES_DIR, "blob")
 
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
+BLOB_STORE.mkdir(parents=True, exist_ok=True)
 
 Path(MODEL_REGISTRY).mkdir(exist_ok=True)
 
